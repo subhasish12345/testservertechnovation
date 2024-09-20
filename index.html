@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technovation 2K24</title>
+    <link rel="stylesheet" href="/home page/style.css">
+    <style>
+        /* Fullscreen video overlay */
+        #videoOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        #videoOverlay video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Skip button */
+        #skipButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            z-index: 10000;
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        /* Hide the main content until video finishes */
+        #mainContent {
+            display: none;
+        }
+
+        /* Watch Trailer button */
+        #watchTrailerButton {
+            margin-top: 10px;
+            background-color: rgba(77, 222, 255, 0.8);
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Countdown and view counter styles */
+        .countdown-timer, .view-counter {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 768px) {
+            .countdown-timer, .view-counter {
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+            #watchTrailerButton {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown-timer, .view-counter {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+
+            #watchTrailerButton {
+                font-size: 10px;
+                padding: 5px 10px;
+            }
+
+            .banner div {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Overlay -->
+    <div id="videoOverlay">
+        <video id="introVideo" autoplay>
+            <source src="/WhatsApp Video 2024-09-20 at 11.31.17_6d4d9a26.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="skipButton" onclick="skipVideo()">Skip</button>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="mainContent">
+        <header>
+            <figure class="logo">
+                <img src="/home page/img/logo.png" alt="Logo">
+            </figure>
+        </header>
+        <main>
+            <div class="banner">
+                <div>
+                    <h5>@GEC</h5>
+                    <h1 class="left">WELCOME TO</h1>
+                    <br>
+                    <h1>(*_*)</h1>
+                    <br>
+                    <h1 class="right">TECHNOVATION 2K24</h1>
+                </div>
+                <h4><b>Stay Close To Us</b><br><br>FOR Regular Update</h4>
+                <button onclick="location.href='/events/events.html'">Enter To The EVENT</button>
+                <button onclick="location.href='/aboutus.html'">ABOUT US</button>
+                <button onclick="location.href='/blogs/blogs.html'">BLOGS | RESULTS</button>
+                <canvas id="dotsCanvas"></canvas>
+
+                <!-- Countdown Timer -->
+                <div id="countdown" class="countdown-timer">Loading...</div>
+
+                <!-- View Counter -->
+                <div class="view-counter">
+                    <p>Website views: <span id="viewCount">0</span></p>
+                </div>
+                
+                <!-- Watch Trailer Button -->
+                <button id="watchTrailerButton" onclick="replayTrailer()">Watch Trailer</button>
+            </div>
+        </main>
+        
+        <!-- Background Music -->
+        <audio autoplay loop hidden>
+            <source src="/home page/img/WhatsApp Audio 2024-09-18 at 08.02.21_10495ffe.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script src="/home page/app.js"></script>
+    </div>
+
+    <script>
+        // Check if video has been played before
+        const videoPlayed = localStorage.getItem('videoPlayed');
+        
+        // Show video overlay if not played, otherwise show main content
+        if (!videoPlayed) {
+            document.getElementById('videoOverlay').style.display = 'flex';
+            document.getElementById('mainContent').style.display = 'none';
+        } else {
+            document.getElementById('videoOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }
+
+        // Hide video overlay and show main content after video ends
+        document.getElementById('introVideo').addEventListener('ended', function() {
+            localStorage.setItem('videoPlayed', 'true');
+            document.getElementById('videoOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        });
+
+        // Skip video function
+        function skipVideo() {
+            localStorage.setItem('videoPlayed', 'true');
+            document.getElementById('videoOverlay').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+            document.getElementById('introVideo').pause();
+        }
+
+        // Replay trailer function
+        function replayTrailer() {
+            document.getElementById('videoOverlay').style.display = 'flex';
+            document.getElementById('mainContent').style.display = 'none';
+            document.getElementById('introVideo').currentTime = 0;
+            document.getElementById('introVideo').play();
+        }
+    </script>
+</body>
+</html>

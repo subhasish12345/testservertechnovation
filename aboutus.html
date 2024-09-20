@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Syndicates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="nav">
+        <h3><b>DECODE</b> SYNDICATES</h3>
+        <button onclick="location.href='/index.html'">HOME</button>
+    </div>
+    
+    <!-- Video Background -->
+    <div id="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="/subhu.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div id="main">
+        <div id="page">
+            <div id="loop">
+                <h1><b>Empowering</b> Innovation <b><i>Crafting</i></b> <span>Tomorrow</span>’s <span><i>Technology.</i></span></h1>
+                <h1><b>Empowering</b> Innovation <b><i>Crafting</i></b> <span>Tomorrow</span>’s <span><i>Technology.</i></span></h1>
+                <h1><b>Empowering</b> Innovation <b><i>Crafting</i></b> <span>Tomorrow</span>’s <span><i>Technology.</i></span></h1>
+            </div>
+            <h3>"Remember, your work may be only to sweep a railway crossing, but it is your duty to keep it so clean that no other crossing in the world is as clean as yours." <br> CREATE NEW VALUES AND PROFITS THROUGH PLAY’S VIRTUAL <br> WORLD.</h3>
+            <h4>by Sir M Visvesvaraya</h4>
+            <canvas></canvas>
+        </div>
+
+        <!-- Profile section -->
+        <div id="profiles-container">
+            <div class="profile-left">
+                <img src="/WhatsApp Image 2024-09-19 at 20.23.21_9de637c6.jpg" alt="Profile 1">
+                <h3>Priyanka Rani Sahu</h3>
+            </div>
+
+            <div class="profile-right">
+                <img src="/WhatsApp Image 2024-09-19 at 20.23.21_67b6b288.jpg" alt="Profile 2">
+                <h3>Prabhat Kumar</h3>
+            </div>
+
+            <div class="profile-left">
+                <img src="/WhatsApp Image 2024-09-19 at 22.00.00_75e07922.jpg" alt="Profile 3">
+                <h3>Subhasish Nayak</h3>
+            </div>
+
+            <div class="profile-right">
+                <img src="/WhatsApp Image 2024-09-19 at 20.23.21_d5ba5777.jpg" alt="Profile 4">
+                <h3>Rudra Narayan Das</h3>
+            </div>
+        </div>
+
+        <!-- Query Form Section -->
+        <div id="query-section">
+            <h3>Contact Us</h3>
+            <form id="query-form" action="https://formspree.io/f/xqazvevw" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Handling the form submission and redirecting to email client
+        document.getElementById('query-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from actually submitting
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const feedback = document.getElementById('feedback').value;
+
+            const mailtoLink = `mailto:subhasishnayak38@gmail.com?subject=Feedback from ${name}&body=Name: ${name}%0AEmail: ${email}%0AFeedback: ${feedback}`;
+
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

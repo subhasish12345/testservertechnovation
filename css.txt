@@ -1,0 +1,175 @@
+ /* Styles for the hamburger menu */
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjust based on your header height */
+        right: 10px;
+        background-color: #9ffff7;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 10; /* Ensure it appears above other content */
+    }
+
+    .menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .menu a:hover {
+        background-color: #71ebbc;
+    }
+
+    /* Show the menu when active */
+    .menu.active {
+        display: flex; /* This shows the menu */
+        flex-direction: column;
+    }
+    
+}
+.menu button {
+    pointer-events: auto; /* Ensure the button can receive click events */
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+
+html
+
+
+
+
+ /* Header Styles */
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #000000;
+        }
+
+        #nav h3 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px; /* Adjust based on your header height */
+            right: 10px;
+            background-color: #9ffff7;
+            color: #000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu button {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #71ebbc;
+        }
+
+        /* Show the menu when active */
+        .menu.active {
+            display: flex;
+        }
+
+        /* Media Queries */
+        @media (max-width: 767px) {
+            .hamburger {
+                display: flex;
+            }
+            .menu {
+                right: 5px;
+            }
+        }
+
+        /* Additional Styles */
+        header {
+            width: min(1200px, 90vw);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .banner {
+            margin-top: -50px;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Your other CSS styles... */
+        /* (Keep the existing styles for .product, .rock, etc.) */
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h3><b>Technovation</b> 2K24</h3>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       <div class="menu" id="menu">
+    <a href="/index.html"><button>HOME</button></a>
+    <a href="/aboutus.html"><button>ABOUT US</button></a>
+    <a href="/blogs/blogs.html"><button>BLOGS</button></a>
+    <a href="/result/result.html"><button>RESULTS</button></a>
+</div>
