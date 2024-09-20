@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+body {
+    min-height: 150vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1E1E1E;
+    background-color: #CDCDCD;
+    background-image:
+        repeating-linear-gradient(
+            to right, transparent 0 150px, #0001 150px 151px
+        ),
+        repeating-linear-gradient(
+            to bottom, transparent 0 150px, #0001 150px 151px
+        ),
+        linear-gradient(to right, #CDCDCDcc, #CDCDCDcc),
+        url(/events/images/bg.jpg);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: min(1200px, 90vw);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    height: 0;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-family: 'Karantina', sans-serif;
+    font-size: 16vw;
+    line-height: 0.8em;
+}
+
+header .author {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header h3 {
+    font-family: 'Karantina', sans-serif;
+    font-size: 5vw;
+}
+
+header .author div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .author div p:nth-child(2) {
+    font-weight: 500;
+}
+
+header .author img {
+    width: 250px;
+}
+
+.banner {
+    margin-top: -50px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.product {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 170px;
+    z-index: 2;
+    width: 500px;
+    transition: 0.7s;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product .soda {
+    position: relative;
+    background: var(--url), url(images/mockup.png) 0 0;
+    background-size: auto 100%;
+    width: 280px;
+    aspect-ratio: 2 / 4;
+    background-blend-mode: multiply;
+    transition: 0.8s;
+    mask-image: url(images/mockup.png);
+    mask-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s infinite linear; /* Rotation animation */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.soda button {
+    all: unset;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #afaeae55;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.soda button:hover {
+    background-color: #c691e6;
+    color: #fff;
+    box-shadow: 0 0 50px #c691e6;
+}
+
+.product:hover {
+    bottom: 300px;
+}
+
+.rock {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.rock img:nth-child(1) {
+    position: absolute;
+    height: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.rock img:nth-child(2) {
+    position: absolute;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+
+.rock img:nth-child(3) {
+    position: absolute;
+    height: 80%;
+    right: 0px;
+    bottom: -100px;
+    rotate: -25deg;
+    transition: 0.7s;
+}
+
+.banner:has(.product:hover) .rock img:nth-child(1) {
+    transform: translateX(-50%) translateY(50px);
+}
+
+.banner:has(.product:hover) .rock img:nth-child(2) {
+    transform: translateX(-100px) translateY(100px);
+}
+
+.banner:has(.product:hover) .rock img:nth-child(3) {
+    transform: translateX(100px) translateY(100px);
+}
+
+@media screen and (max-width: 1023px) {
+    .soda {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header img {
+        display: none;
+    }
+    header .author {
+        width: 100%;
+    }
+
+    /* Styles for the hamburger menu */
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        /* Add styles to control its size/position on larger screens if necessary */
+        position: relative; /* Ensure it's properly positioned */
+    }
+    
+    .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Adjust based on your header height */
+        right: 10px;
+        background-color: #9ffff7;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 10; /* Ensure it appears above other content */
+    }
+
+    .menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .menu a:hover {
+        background-color: #71ebbc;
+    }
+
+    /* Show the menu when active */
+    .menu.active {
+        display: flex; /* This shows the menu */
+        flex-direction: column;
+    }
+    
+}
+.menu button {
+    pointer-events: auto; /* Ensure the button can receive click events */
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

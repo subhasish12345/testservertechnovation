@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technovation 2K24</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            
+            
+            min-height: 150vh;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #1E1E1E;
+            background-color: #CDCDCD;
+            background-image:
+                repeating-linear-gradient(
+                    to right, transparent 0 150px, #0001 150px 151px
+                ),
+                repeating-linear-gradient(
+                    to bottom, transparent 0 150px, #0001 150px 151px
+                ),
+                linear-gradient(to right, #CDCDCDcc, #CDCDCDcc),
+                url(/events/images/bg.jpg);
+        }
+
+        /* Header Styles */
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: transparent;
+           
+        }
+
+        #nav h3 {
+            margin: 0;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px; /* Adjust based on your header height */
+            right: 10px;
+            background-color: #9ffff7;
+            color: #000;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .menu button {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .menu button:hover {
+            background-color: #71ebbc;
+        }
+
+        /* Show the menu when active */
+        .menu.active {
+            display: flex;
+        }
+
+        /* Media Queries */
+        @media (max-width: 767px) {
+            .hamburger {
+                display: flex;
+            }
+            .menu {
+                right: 5px;
+            }
+        }
+
+        /* Additional Styles */
+        header {
+            width: min(1200px, 90vw);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .banner {
+            margin-top: -50px;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Your other CSS styles... */
+        /* (Keep the existing styles for .product, .rock, etc.) */
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h3><b>Technovation</b> 2K24</h3>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       <div class="menu" id="menu">
+    <a href="/index.html"><button>HOME</button></a>
+    <a href="/aboutus.html"><button>ABOUT US</button></a>
+    <a href="/blogs/blogs.html"><button>BLOGS</button></a>
+    <a href="/result/result.html"><button>RESULTS</button></a>
+</div>
+
+    </div>
+
+    <header>
+        <div class="left">
+            <h1>Events ONLY</h1>
+            <img src="images/2.png" alt="Logo">
+        </div>
+        <div class="author">
+            <h3></h3>
+            <div>
+                <p></p>
+            </div>
+            <div>
+                <p>Code By</p>
+                <p>Decode Syndicates</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="product">
+            <div class="soda robot" style="--url: url(images/bg.png)">
+                <button onclick="location.href='/technical1/technical.html'">Technical Events</button>
+            </div>
+            <div class="soda smooth" style="--url: url(images/bg2.png)">
+                <button onclick="location.href='/nontechnical1/nontechnical.html'">Non-Technical Events</button>
+            </div>
+        </div>
+
+        <div class="rock">
+            <img src="images/rock1.png" alt="Rock 1">
+            <img src="images/rock2.png" alt="Rock 2">
+            <img src="images/rock3.png" alt="Rock 3">
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
