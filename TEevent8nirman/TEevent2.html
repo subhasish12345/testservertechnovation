@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Nirman  </h2>
+                        <p>
+                            <b>Nirman-AutoCAD competition</b> is an exciting way to 
+                            introduce them to practical design and drafting 
+                            skills. </p>
+                            <p><b>1. Competition Format 
+                                Individual or Team-Based:
+                            </b> </P>
+                               <P> Individual or Team-Based: Depending on the 
+                                difficulty level, you can have individual participation 
+                                or teams of 2-3 students. 
+                                Time Limit: Set a reasonable time limit, like 1-2 
+                                hours, to complete the design task. 
+                                Stages: 
+                                o Preliminary Round: A simpler task 
+                                for the first filtering. 
+                                o Final Round: A more challenging 
+                                and complex design problem for 
+                                selected participants.  </p>
+                            
+                             
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"><p><b>2. Task Ideas 
+                        • Simple 2D Drafting (Prelims):  </b></p>  
+                         
+                             <P>o Drawing basic mechanical or 
+                             architectural designs like a gear, a 
+                             floor plan, or a simple part. 
+                             o Focusing on precision, correct 
+                             usage of dimensions, and speed. 
+                             • Complex 2D or 3D Modelling (Finals): 
+                             o Advanced drafting tasks, such as 
+                             designing a mechanical component, 
+                             3D modeling of a simple product, 
+                             or an architectural model of a 
+                             room/building. 
+                             o Focus on layers, dimensions, and 
+                             accuracy in 2D, or proper rendering 
+                             and detailing in 3D models.  </P>
+                        
+                  <p><b>3. Judging Criteria  </b></p>
+                        <p>• Accuracy: Proper scaling, dimensioning, 
+                            and use of AutoCAD commands. 
+                            • Creativity: For design-related tasks, assess 
+                            creativity in applying concepts. 
+                            • Time Management: Completing the task 
+                            within the given time. 
+                            • Technical Skills: Proficiency with AutoCAD 
+                            tools like layers, blocks, views, and 
+                            annotations. 
+                             </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Sudeep Kumar patro  </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScP692VLLwnF4JlEw3uTHQok7OvVbxiB27nL_7qCoaQ9viVOw/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

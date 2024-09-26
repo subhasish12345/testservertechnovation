@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Debugging Battle  </h2>
+                        <p>
+                            <b>Debugging Battle </b> e is a competitive event where 
+                            participants are given buggy code and must identify 
+                            and fix errors as quickly as possible. The goal is to 
+                            test problem-solving skills, attention to detail, and 
+                            debugging proficiency.  </p>
+                            <p><b>Rules:</b> </P>
+                               <P>1. Individual or Team Participation: 
+                                Participants can compete individually or in 
+                                teams (2-3 members).  </p>
+                            <p>2. No Internet: Participants cannot use the 
+    internet to search for solutions but can use 
+    built-in IDE features (e.g., debuggers).  </p>
+                            
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"><P> 3. Time Limit: Each round has a set time limit 
+                                (e.g., 20-30 minutes) to debug the code.</P> 
+                        <p>4. Levels of Difficulty: There will be multiple 
+                        rounds with increasing difficulty. The initial 
+                        rounds might have basic syntax errors, 
+                        while later rounds will involve logical bugs 
+                        or complex runtime issues. </p>  
+                         <P>5. Environment: A specific programming 
+                            language and IDE (e.g., C, Java, Python) will 
+                            be provided, or participants can use their 
+                            preferred setup if allowed. </P>
+                        
+                             <P>6. Types of Bugs: The bugs could include 
+                                syntax errors, logical errors, edge case 
+                                handling, performance issues, and incorrect 
+                                outputs. 
+                                 </P>
+                         <P>7. Scoring: Points are awarded based on 
+                            speed (faster fixes earn more points), 
+                            accuracy (fixing all bugs), and code clarity 
+                            (maintaining clean code).  </P>
+                         
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Rupanita Das   </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIm7TciFSXCjB_KKsbAS6FMp9bz68WnCcU_REX5yzIW_OnGg/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
