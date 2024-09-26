@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Competitive Pair Programming   </h2>
+                        <p>
+                            <b>Competitive Pair Programming </b> is an event where 
+                            two participants work together to solve a 
+                            programming problem, each taking on specific roles. 
+                            The competition emphasizes teamwork, 
+                            communication, and collaboration while coding. </p>
+                            <p><b>Rules:</b> </P>
+                               <P> 1. Team of Two: Participants must work in 
+                                pairs. One is the Driver (who writes the 
+                                code) and the other is the Navigator (who 
+                                guides and reviews the code). </p>
+                           
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"> <p>2. Role Switch: Roles must be switched at 
+                                regular intervals (e.g., every 10-15 
+                                minutes). Teams can have multiple role 
+                                switches depending on the length of the 
+                                challenge.
+                                3. Time Limit: The total time to solve the 
+                                problem    </p>
+                             <P>4. Problem Complexity: The problems are 
+                                designed to require collaboration—such as 
+                                algorithms, data structures, or solving real
+                                world coding challenges (e.g., building a 
+                                small feature or application). 
+                                5. No Solo Work: The Navigator cannot touch 
+                                the keyboard, and the Driver cannot make 
+                                significant decisions alone. Every move 
+                                must be discussed.
+                                 6. Communication Focus: Teams are judged 
+                                on how well they communicate and 
+                                collaborate, not just on the correctness of 
+                                the solution.  </P>
+                         <P>7. Scoring Criteria: 
+                            Code Quality: Well-structured, 
+                            readable, and functional code is a 
+                            priority. 
+                            Problem Solving: How efficiently 
+                            the problem is solved and whether 
+                            all parts of the problem are 
+                            addressed. 
+                             </P>
+                         
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Ipsita Mishra </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                           <p> Dibyalisha Rath   </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeZKRMeC74KVPkPUH_5EZ9fqsZbi-dNueEubBpjKrgw0jwijQ/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

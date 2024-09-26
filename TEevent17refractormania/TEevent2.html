@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Refactor Mania   </h2>
+                        <p>
+                            <b>Refactor Mania </b> is an event focused on improving 
+                            and optimizing existing code by making it cleaner, 
+                            more efficient, and easier to understand. 
+                            Participants are tasked with refactoring a given 
+                            piece of code to improve its quality without altering 
+                            its functionality.  </p>
+                            <p><b>Rules:</b> </P>
+                               <P> <i> 1. Individual or Team Participation: 
+                                Participants can compete individually or in 
+                                teams of 2. 
+                              </p> <p>2. Time Limit: Each participant/team is given a 
+                        set time (e.g., 30-45 minutes) to refactor 
+                        the code. </i>  </p>
+                           
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"> <p> 3. Given Code: Participants are provided with 
+                                pre-written, unoptimized, or messy code.
+                                The code could have redundant logic, poor 
+                                structure, lack of readability, or inefficiency.</p>
+                             <p>4. Code Refactoring Objectives: 
+                                * Improve Readability: Make the 
+                                code easier to read and maintain 
+                                (e.g., better variable names, 
+                                modularization). 
+                                * Optimize Efficiency: Enhance the 
+                                performance of the code (e.g., 
+                                improving algorithm efficiency, 
+                                reducing complexity). 
+                                * Reduce Redundancy: Eliminate 
+                                unnecessary code or repetitive 
+                                sections. 
+                                * Maintain Functionality: The 
+                                refactored code must behave 
+                                exactly the same as the original in 
+                                all test cases. 
+                                o Add Comments: Well-documented 
+                                code with meaningful comments is </p>  
+                         <P> No External Libraries: Participants must 
+                            work within the constraints of the given 
+                            language and may not introduce external 
+                            libraries unless explicitly allowed.  </P>
+                             
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Jyoti ranjan sahoo 
+                         </p> 
+                         <p>P.no - xxxxxxxxxx</p>
+                         <p>  Manmohan Sahoo </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9nw-i_w4mQq5IMNI2w64UXrAmSHdwwyBocJlss9l5Ub3jmA/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

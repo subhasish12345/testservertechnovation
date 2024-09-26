@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Legacy Code Revival  </h2>
+                        <p>
+                            <b>Legacy Code Revival </b>  is a programming event where 
+                            participants are given outdated or poorly written 
+                            legacy code and tasked with updating, optimizing, 
+                            and reviving it for modern use. The focus is on 
+                            improving code quality, adding new features, and 
+                            making the old codebase compatible with current 
+                            standards. </p>
+                            <p><b>Rules:</b> </P>
+                               <P> 1. Team or Individual Participation: 
+                                Participants can compete individually or in 
+                                teams of 2-3 members. </p>
+                            <p>2. Time Limit: Teams have a fixed amount of 
+                                time (e.g., 1-2 hours) to refactor and revive 
+                                the legacy code.  </p>
+                            
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"> <p>2. Given Legacy Code: Participants will be 
+                        provided with an old or poorly maintained 
+                        codebase that may include outdated 
+                        syntax, deprecated libraries, or inefficient 
+                        practices. </p>  
+                         <P>4. Objectives: 
+                            * Modernize the Code: Update the 
+                            code to work with current versions 
+                            of programming languages and 
+                            libraries. 
+                            * Improve Performance: Optimize 
+                            inefficient sections of the code for 
+                            better performance. 
+                            * Refactor for Readability: Clean up 
+                            code to make it more readable and 
+                            maintainable by following modern 
+                            coding standards. 
+                            * Bug Fixing: Fix any functional or 
+                            logic bugs present in the legacy 
+                            code. 
+                            * Add Features: Introduce small, pre
+                            specified new features or 
+                            enhancements to the existing code.</P>
+                             <P>5. Test Compatibility: Participants must 
+                                ensure that the updated code passes all 
+                                test cases and is compatible with modern 
+                                platforms or frameworks. 
+                                6. No Internet Libraries  </P>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Prof. Ambika Hota   </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjs-DJHMDQSGNxVSxGf6xtvN_cO1WM7ABZR9wP8R1gB6g4QA/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
