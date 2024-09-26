@@ -25,7 +25,7 @@ body {
 header img {
     width: 180px;
     cursor: pointer;
-    margin-top: 120px;
+    margin-top: 150px;
     margin-left: 1400px;
 }
 
@@ -127,7 +127,7 @@ h1.right {
 /* Responsive adjustments for mobile devices */
 @media screen and (max-width: 768px) {
     header img {
-        width: 150px; /* Smaller logo for mobile */
+        width: 150px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
@@ -141,11 +141,11 @@ h1.right {
 
     header nav ul {
         flex-direction: column;
-        gap: 15px; /* Reduce gap between items on mobile */
+        gap: 15px;
     }
 
     h1, h2, h3, h5, h6 {
-        font-size: 30px; /* Smaller heading size for mobile */
+        font-size: 30px;
     }
 
     h4 {
@@ -153,31 +153,28 @@ h1.right {
     }
 
     .banner {
-        margin-top: 0; /* Adjust banner for smaller screens */
+        margin-top: 0;
     }
 
     .banner button {
-        padding: 8px 15px; /* Smaller button size for mobile */
+        padding: 8px 15px;
     }
 
     h1 {
-        font-size: 3em; /* Smaller font size for mobile */
-    }
-
-    h1.left, h1.right {
-        text-align: center;
+        font-size: 3em;
     }
 }
 
+
 @media screen and (max-width: 480px) {
     header img {
-        width: 100px; /* Further reduce logo size for smaller screens */
+        width: 100px;
         margin-top: 10px;
     }
 
     h1, h2, h3, h5, h6 {
         font-size: 25px;
-        margin-bottom: -5px; /* Further reduce font size for small devices */
+        margin-bottom: -5px;
     }
 
     h4 {
@@ -185,19 +182,19 @@ h1.right {
     }
 
     .banner button {
-        padding: 6px 10px; /* Smaller button size for mobile */
+        padding: 6px 10px;
     }
 
     h1 {
-        font-size: 2.5em; /* Adjust font size further for small screens */
+        font-size: 2.5em;
     }
 
     header nav ul {
-        gap: 10px; /* Reduce gap between navigation items */
+        gap: 10px;
     }
 
     .banner {
-        gap: 15px; /* Adjust spacing in the banner */
+        gap: 15px;
     }
 }
 
