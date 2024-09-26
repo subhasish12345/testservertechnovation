@@ -113,15 +113,13 @@ countdown();
 // View Counter
 function updateViewCounter() {
     const viewCountElement = document.getElementById('viewCount');
-    let viewCount = localStorage.getItem('viewCount');
 
-    if (!viewCount) {
-        viewCount = 0;
-    }
-
-    viewCount++;
-    localStorage.setItem('viewCount', viewCount);
-    viewCountElement.innerText = viewCount;
+    fetch('update_views.php')
+        .then(response => response.json())
+        .then(data => {
+            viewCountElement.innerText = data.view_count;
+        })
+        .catch(error => console.error('Error updating view count:', error));
 }
 
 // Call the view counter update function
