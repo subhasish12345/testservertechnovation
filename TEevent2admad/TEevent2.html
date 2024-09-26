@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Ad Mad Show  </h2>
+                        <p>
+                            <b>Ad Mad Show</b> is a creative and entertaining event 
+where participants create and present their own 
+humorous or innovative advertisements. The focus is 
+on originality, creativity, and the ability to engage and 
+entertain an audience through effective advertising </p>
+                            <p><b>Rules:</b> </P>
+                               <P> 1. Eligibility: Participants must be registered in 
+                                advance. </p>
+                            <p>2. The competition can be for individuals or teams ( 
+                                3-5 members).  </p>
+                             <p><b>     Ad Concept: </b></p>  
+                         <P>1. Each team/individual must create an original ad 
+                            concept </P>
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content">
+                             <P>2. The advertisement can promote a real product, 
+                            an imaginary product, or a takeoff of an existing 
+                            product. </P>
+                         <P>product. 
+                            3. The content must align with the theme provided 
+                            Duration: </P>
+                         <P>4. Each ad presentation should last between 2 to 5 
+                            minutes (5min.max). 
+                        <p>5. Exceeding the time limit may result in penalties. </p>
+                  <p><b>Content Restrictions: </b></p>
+                        <p>1. The ad should be humorous but appropriate. 
+                    Offensive or inappropriate content will result in 
+                    disqualification. 
+                    2. No vulgarity, racism, sexism, or political 
+                    references are allowed. 
+                    3. Avoid controversial or sensitive topics (e.g., 
+                    religion, politics). </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Prof. Sunil Kumar Dalei  </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsVq2vPHb28Ry8Vthj4Z0eaBDQNwdPXNhlE2KzrJi-W4Wt8g/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

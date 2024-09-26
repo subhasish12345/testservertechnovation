@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Code Feasta </h2>
+                        <p>
+                            <b>CodeFeasta</b> is a programming and coding 
+                            competition designed to challenge participants with 
+                            a series of coding problems or tasks. The event 
+                            typically involves solving problems under time 
+                            constraints, showcasing skills in various 
+                            programming languages, algorithms, and problem
+                            solving techniques. </p>
+                            <p><b>Rules:</b> </P>
+                               <P> 1. Individual or Team Participation: 
+                                Participants can compete individually or in 
+                                teams of 2-4 members. </p>
+                            <p>2. Problem Sets: Participants are given a set 
+                                of coding problems of varying difficulty 
+                                levels. These problems can include 
+                                algorithmic challenges, data structure </p>
+                               
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content">
+                         <P>3. Time Limit: The competition is usually held 
+                            within a fixed time frame (e.g., 2-4 hours) 
+                            during which participants must solve as 
+                            many problems as possible. </P>
+                         <P>4. Languages and Tools: Participants can use 
+                            predefined programming languages and 
+                            tools. The allowed languages should be 
+                            specified in advance (e.g., Python, C++, 
+                            Java). </P>
+                         <P>5. Submission: Solutions must be submitted 
+                            through a platform or system provided by 
+                            the organizers. Submissions are typically 
+                            checked for correctness, efficiency, and 
+                            adherence to problem constraints. </P>
+                         <P>6. Test Cases: Problems are tested against 
+                            hidden test cases to ensure robustness. 
+                            Solutions must pass all test cases to earn 
+                            full points. 
+                            </P>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                       <b> <p>Faculty</p></b>
+                        <p>Dr. Anshuman Pattanaik </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b><p>
+                           STUDENT
+                        </p></b>xxxxxxxxxx
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgcfhVADHiBJoAUBhCdMeOvZzX3jUt8Rwvu-g3BwBpGSqALw/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
