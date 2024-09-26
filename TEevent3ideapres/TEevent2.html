@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2>Idea presentation </h2>
+                        <p>
+                            <b>Idea Presentation</b> is an event where participants 
+                            pitch their innovative ideas or projects to an 
+                            audience, typically including judges or potential 
+                            investors. The goal is to effectively communicate the 
+                            value, feasibility, and impact of their idea. </p>
+                            <p><b>Eligibility</b> </P>
+                               <P> 1.Participants must register before the deadline.  </p>
+                            <p>2.Individual or team (maximum 4) can participate.  </p>
+                            <p>3.Participants must be original creators of the idea. </p>
+                            
+                        
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"> <p><b>    Presentation Format:  </b></p>  
+                         <P>1.Each presentation should focus on a single idea. 
+                            2.Presentation length: 5-7 minutes per presentation. </P>
+                             <P>3.Visual aids: PowerPoint slides. 
+                                4.Language of the presentation: English.  </P>
+                        
+                  <p><b>Judging Criteria </b></p>
+                        <p>1.Originality and Creativity: The idea should be 
+                            innovative and demonstrate creative thinking. 
+                            2.Feasibility: Judges will assess whether the idea is 
+                            practical and implementable. 
+                            3.Impact: The idea should have a positive social, 
+                            environmental, or business impact. 
+                            4.Presentation Skills:Clear communication, 
+                            engagement with the audience, and confidence 
+                            during the presentation. 
+                            5.Supporting Evidence: Ideas should be backed by 
+                            data, research, or real-world examples, where 
+                            applicable. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Prof. Raja Sarkar   </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdS9_vZNSllg7Rk4JZ4qbMu8cTv80GIYFmSKkPvyN3JOd7HZA/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

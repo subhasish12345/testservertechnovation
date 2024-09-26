@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-right-buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-right-buttons a {
+            background-color: #25283B;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+
+        .top-right-buttons a:hover {
+            background-color: #4e4e8b;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <!-- Navigation SVG -->
+            <nav>
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+                </svg>
+            </nav>
+
+            <!-- Two buttons for Home and Event page -->
+            <div class="top-right-buttons">
+                <a href="/index.html">Home</a>
+                <a href="/events/events.html">Event Page</a>
+            </div>
+        </header>
+
+        <section class="slider">
+            <div class="list">
+                <div class="item active">
+                    <div class="image" style="--url: url('img/1.jpg')"></div>
+                    <div class="content">
+                        <h2> Group Discussion  </h2>
+                        <p>
+                            <b>Group Discussion</b> is It is a form of structured discussion conducted among 
+                            participants on a specific topic to evaluate their 
+                            communication skills, knowledge, leadership 
+                            abilities, and teamwork. It is widely used in 
+                            recruitment processes and entrance exams.  </p>
+                            <p><b>Rules:</b> </P>
+                               <P> A team comprising of 5 members each will take part 
+                                in GD on a topic given for 10 min.Three teams will 
+                                 
+                                 
+                                 
+                                 
+                                qualify for 2nd round. Each team will compete on a 
+                                subject given to them for a duration of 5 min for the 
+                                final 2nd round. Only one team will be chosen as 
+                                winner in the 2nd round.  </p>
+                           
+
+
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/2.jpg')"></div>
+                    <div class="content"><b><p> 
+                        Topic: </p></b>
+                             <P>Topic: 
+                                • Abstract Topics: These are broad and 
+                                open-ended, like “Innovation is the key to 
+                                success” or “Red vs. Blue.” 
+                                • Current Affairs: Based on recent events 
+                                like “Impact of AI on Jobs” or “Sustainable 
+                                Development in Business.” 
+                                • Case-Based Topics: Present a 
+                                hypothetical situation or business problem 
+                                to solve. 
+                                • Controversial Topics: Topics that spark 
+                                debate, such as “Globalization is a threat to 
+                                local businesses.”  </P>
+                        
+                  <p><b>  Evaluation Criteria:  </b></p>
+                        <p>• Content Knowledge: How well participants 
+                            understand the topic and support their 
+                            points with facts or examples. 
+                            • Clarity & Communication: Clear 
+                            articulation of thoughts with proper 
+                            structure. 
+                            • Listening Skills: Acknowledging and 
+                            building on other participants' viewpoints. 
+                            • Teamwork: Respecting others' opinions, 
+                            encouraging quieter participants, and 
+                            maintaining the group’s focus. 
+                            • Leadership & Initiative: Taking charge of 
+                            the discussion without dominating it. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image" style="--url: url('img/3.jpg')"></div>
+                    <div class="content">  <h2> Co ordinator</h2>
+                        <b><p>Faculty</p></b>
+                        <p>Dr. Satyajit Samantarai  
+                            </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                        <p> Dr.Saraswati Devi </p>
+                        <p>P.no - xxxxxxxxxx</p>
+                      
+                        
+                        <b> <p><p>
+                           STUDENT
+                        </p></b><P>xxxxxxxxxx</P>
+                         <p>P.no - xxxxxxxxxx</p>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows">
+                <button id="prev">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="register-button-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNcelievd7fDfPoe5dCc4FWGi6gHC2bksWdq3IQnfa86-Csg/viewform" class="register-button">Register Now</a>
+        </div>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
